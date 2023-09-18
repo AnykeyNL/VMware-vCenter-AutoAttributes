@@ -6,6 +6,8 @@ Make sure you use the **--no-deps** option when installing additional modules on
 This will prevent any existing libraries to be overwritten by newer version and might else break
 any other vcenter dependencies.
 
+**MAKE A BACKUP OF YOUR VCENTER FIRST!!!**
+
 ## How to install
 1. SSH to your vCenter as root
 2. go to the shell
