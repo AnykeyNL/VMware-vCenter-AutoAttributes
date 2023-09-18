@@ -1,3 +1,6 @@
+import sys
+sys.path.append('/usr/lib/vmware/site-packages/')
+
 import os
 from pyVim.connect import SmartConnect, Disconnect, SmartConnection
 from pyVmomi import vim, vmodl

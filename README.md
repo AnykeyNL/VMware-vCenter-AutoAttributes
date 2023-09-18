@@ -2,27 +2,19 @@
 Creates based on vCenter alarms, automatic custom attributes on newly created VMs
 
 ## IMPORTANT NOTICE!
-Make sure you use the **--no-deps** option when installing additional modules on your vCenter. 
-This will prevent any existing libraries to be overwritten by newer version and might else break
-any other vcenter dependencies.
-
 **MAKE A BACKUP OF YOUR VCENTER FIRST!!!**
 
 ## How to install
 1. SSH to your vCenter as root
 2. go to the shell
-3. Install python pip, run: tdnf install python3-pip
-![Alt text](screenshots/installpip.png?raw=true "Install PIP")
-4. Install pyVmomi library, run: pip3 install -U --no-deps pyVmomi
-![Alt text](screenshots/installpyvmomi.png?raw=true "Install pyVmomi")
-5. create a directory: mkdir /root/scripts
-6. Modify the createVM.py script to have your vCenter credentials correctly in it
-7. copy the createVM.py script in the scripts directory
-8. In vCenter, browse to "Tags & Custom Attributes" and add the following Custom Attributes:
+3. create a directory: mkdir /root/scripts
+4. Modify the createVM.py script to have your vCenter credentials correctly in it
+5. copy the createVM.py script in the scripts directory
+6. In vCenter, browse to "Tags & Custom Attributes" and add the following Custom Attributes:
     1. Attribute: CreatedBy - Type: Virtual Machine
     2. Attribute: CreatedDate - Type: Virtual Machine
     ![Alt text](screenshots/customattribute.png?raw=true "vCenter Custom Attributes")
-9. Create a vCenter Alarm
+7. Create a vCenter Alarm
    1. Click on your vcenter,  and go to the "configure" menu
    2. Click on the Alarm Definitions
    3. Click ADD and give the alarm a name, for example "VM Creation"
