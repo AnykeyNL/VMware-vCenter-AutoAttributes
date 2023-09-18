@@ -30,7 +30,8 @@ Creates based on vCenter alarms, automatic custom attributes on newly created VM
 If you have completed all these steps, any new VM that is created will have automatically 2 custom attribute values. Who created the VM and when.
 ![Alt text](screenshots/example.png?raw=true "Example Custom Attribute values")
 
-
+## Tested on
+- vCenter 7.0.3
 
 
  
